@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CyberShield helps you review suspicious messages and learn safer digital habits." />
+  <title>CyberShield — Personal Digital Safety</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="CyberShield home"><span class="brand-mark">⬡</span> CyberShield</a>
+    <nav><a href="#checker">Message checker</a><a href="#vault">Document safety</a><a href="#tips">Safety tips</a></nav>
+    <span class="status-pill"><span></span> Privacy-first demo</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR PERSONAL DIGITAL SAFETY ASSISTANT</p>
+        <h1>Pause before you<br /><span>trust the message.</span></h1>
+        <p class="hero-text">Review suspicious messages, understand common scam warning signs, and learn how to protect your important documents.</p>
+        <a class="primary-btn" href="#checker">Check a message <span>↗</span></a>
+        <p class="microcopy">Runs in your browser · No account needed · Don't enter passwords or OTPs</p>
+      </div>
+      <div class="hero-visual" aria-label="Cybersecurity shield illustration">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="shield">✓</div>
+        <div class="floating-card card-top"><span class="dot green"></span> Safer choices start here</div>
+        <div class="floating-card card-bottom"><span class="mini-lock">⌑</span><div><strong>Your data stays local</strong><small>Message analysis runs in-browser</small></div></div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Features">
+      <div><span class="stat-icon">⌕</span><div><strong>Message review</strong><small>Spot common red flags</small></div></div>
+      <div><span class="stat-icon">▣</span><div><strong>Document safety</strong><small>Learn backup best practices</small></div></div>
+      <div><span class="stat-icon">✳</span><div><strong>Clear explanations</strong><small>Understand each warning</small></div></div>
+    </section>
+
+    <section class="section" id="checker">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / MESSAGE CHECKER</p><h2>Does this message look suspicious?</h2><p>Paste message text below. We'll check for common warning signs, not make a definitive verdict.</p></div>
+        <span class="tag">Demo analysis</span>
+      </div>
+      <div class="checker-grid">
+        <div class="panel input-panel">
+          <label for="messageInput">Message text</label>
+          <textarea id="messageInput" rows="7" placeholder="Example: Your bank account will be blocked today. Click this link and verify your account immediately..."></textarea>
+          <div class="input-foot"><span id="charCount">0 characters</span><button class="text-btn" id="clearBtn" type="button">Clear</button></div>
+          <div class="button-row"><button class="primary-btn" id="analyzeBtn" type="button">Analyze message <span>→</span></button><button class="secondary-btn" id="sampleBtn" type="button">Try sample</button></div>
+          <p class="microcopy">For your privacy, this demo does not send the message to a server.</p>
+        </div>
+        <div class="panel result-panel" id="resultPanel" aria-live="polite">
+          <div class="result-placeholder"><div class="scan-icon">⌕</div><h3>Your review will appear here</h3><p>Paste a message and select “Analyze message” to see possible warning signs and safer next steps.</p></div>
+        </div>
+      </div>
+      <p class="disclaimer"><strong>Important:</strong> This is a basic rule-based educational tool. Scammers change tactics, and legitimate messages can contain similar wording. Verify through the official app or phone number independently.</p>
+    </section>
+
+    <section class="section" id="vault">
+      <div class="section-heading">
+        <div><p class="eyebrow">02 / DOCUMENT SAFETY</p><h2>Keep important files safer</h2><p>This first version provides a practical safety checklist. It does not upload, store, or encrypt files.</p></div>
+        <span class="tag">Safety checklist</span>
+      </div>
+      <div class="vault-grid">
+        <article class="vault-card"><div class="vault-icon">▤</div><h3>Make a backup</h3><p>Keep another copy of essential documents on a separate, trusted drive or reputable cloud account.</p><label class="checkline"><input type="checkbox" /> I have a second copy</label></article>
+        <article class="vault-card"><div class="vault-icon">⌑</div><h3>Lock your account</h3><p>Use a strong unique password and turn on multi-factor authentication where available.</p><label class="checkline"><input type="checkbox" /> MFA is enabled</label></article>
+        <article class="vault-card"><div class="vault-icon">⟳</div><h3>Test recovery</h3><p>Occasionally check that you can open your backup and recover a file when needed.</p><label class="checkline"><input type="checkbox" /> I tested a backup</label></article>
+      </div>
+      <div class="privacy-note"><span>🔒</span><div><strong>Privacy by design</strong><p>Never upload identity documents to an unknown website. This prototype does not ask you to select or upload files.</p></div></div>
+    </section>
+
+    <section class="section" id="tips">
+      <div class="section-heading"><div><p class="eyebrow">03 / QUICK GUIDANCE</p><h2>Four habits that reduce risk</h2></div></div>
+      <div class="tips-grid">
+        <article><span>01</span><h3>Verify independently</h3><p>Contact the organization using its official website or the number printed on your card—not the message link.</p></article>
+        <article><span>02</span><h3>Never share OTPs</h3><p>Don't share passwords, OTPs, PINs, or recovery codes with callers or message senders.</p></article>
+        <article><span>03</span><h3>Inspect links</h3><p>Check the actual domain carefully. Don't open unexpected shortened links or attachments.</p></article>
+        <article><span>04</span><h3>Report suspected fraud</h3><p>In India, you can report cybercrime at cybercrime.gov.in. For financial cyber fraud, call 1930 promptly.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">⬡</span> CyberShield</a><p>Built as a cybersecurity awareness prototype. Not a substitute for professional security tools.</p><span>© 2026 CyberShield · Student project</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
